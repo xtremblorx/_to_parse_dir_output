@@ -37,4 +37,4 @@ for /f "skip=4 delims=" %%a in ('dir') do (if !counter! GEQ !total! (goto END)) 
 :END
 PAUSE
 REM Variables in Use= counter,rootfilename,currentdir,Error_code1,total,filename,index
-REM labels in use: 
+REM labels in use: one,two,three, END
