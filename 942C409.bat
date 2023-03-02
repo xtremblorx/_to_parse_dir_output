@@ -36,5 +36,5 @@ set /a counter=0
 for /f "skip=4 delims=" %%a in ('dir') do (if !counter! GEQ !total! (goto END)) & set /a counter+=1 &  for /f "tokens=1,2,3,4 delims= " %%b in ("%%a") do echo. & (set filename=%%a& set filename=!filename:~%INDEX%,250!)&echo !filename!
 :END
 PAUSE
-REM Variables in Use= counter,rootfilename,currentdir,Error_code1
+REM Variables in Use= counter,rootfilename,currentdir,Error_code1,total,filename,index
 REM labels in use: 
