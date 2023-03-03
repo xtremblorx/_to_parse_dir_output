@@ -21,7 +21,7 @@ echo File Search Successful.
 cd %currentdir%
 for /f "delims=" %%a in ('dir ^| find "%rootfilename%"') do for /F %%b in ('python -c "s1 = '%%a';s2 = '%rootfilename%';print(s1.index(s2))"') do set /a INDEX=%%b
 
-echo Enter Parse DIr
+echo Enter Parse Dir
 set /p Parsedir=
 cd %parsedir% 2>NUL
 set error=%errorlevel%
